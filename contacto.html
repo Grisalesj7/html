@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/Robot.jpeg" type="image/x-icon">
-    <title>Certificaciones - Johao Grisales</title>
+    <title>Contacto - Johao Grisales</title>
     <style>
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #eaf4ff;
+            background: #eaf4ff;
             color: #222;
         }
 
@@ -52,7 +52,7 @@
         }
 
         .contenedor {
-            max-width: 1000px;
+            max-width: 700px;
             margin: 50px auto;
             background-color: white;
             padding: 40px;
@@ -63,46 +63,69 @@
         h2 {
             text-align: center;
             color: #0078ff;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
-        .grid-certificados {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
 
-        .certificado {
-            background-color: #f8fbff;
+        label {
+            font-weight: bold;
+            color: #004c99;
+        }
+
+        input, textarea {
+            padding: 12px;
             border: 2px solid #cfe6ff;
-            border-radius: 15px;
-            padding: 20px;
-            text-align: center;
-            transition: 0.3s;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .certificado:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .certificado img {
-            width: 100%;
-            max-width: 250px;
             border-radius: 10px;
-            margin-bottom: 15px;
-            border: 2px solid #d4ecff;
+            font-size: 1rem;
+            width: 100%;
+            transition: border-color 0.3s;
         }
 
-        .certificado h3 {
+        input:focus, textarea:focus {
+            border-color: #0078ff;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            background-color: #0078ff;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #005fcc;
+            transform: translateY(-2px);
+        }
+
+        .info-contacto {
+            margin-top: 30px;
+            text-align: center;
+            color: #004c99;
+        }
+
+        .info-contacto a {
             color: #0078ff;
-            margin-bottom: 10px;
+            text-decoration: none;
+            font-weight: bold;
         }
 
-        .certificado p {
-            font-size: 0.95rem;
-            color: #444;
+        .info-contacto a:hover {
+            text-decoration: underline;
         }
 
         footer {
@@ -120,33 +143,38 @@
 <body>
 
     <header>
-        <h1>Mis Certificaciones</h1>
-        <p>Conoce algunos de mis logros y cursos completados</p>
+        <h1>Contáctame</h1>
+        <p>¿Tienes un proyecto o idea? ¡Hablemos!</p>
     </header>
 
     <nav>
         <a href="./index.html">Inicio</a>
         <a href="./principal.html">Principal</a>
-        <a href="./contacto.html">Contacto</a>
         <a href="./ayuda.html">Ayuda</a>
+        <a href="./certificaciones.html">Certificaciones</a>
         <a href="./portafolio.html">Portafolio</a>
     </nav>
 
     <div class="contenedor">
-        <h2>Ejemplos de como se haria</h2>
+        <h2>Contacto</h2>
 
-        <div class="grid-certificados">
-            <div class="certificado">
-                <h3>Desarrollo Web con HTML</h3>
-            </div>
+        <form action="grisalesjohao@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
 
-            <div class="certificado">
-                <h3>Diseño con CSS</h3>
-            </div>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
 
-            <div class="certificado">
-                <h3>Python para Principiantes</h3>
-            </div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+
+        <div class="info-contacto">
+            <p>O puedes escribirme directamente a:  
+                <a href="grisalesjohao@gmail.com">Correo</a>
+            </p>
         </div>
     </div>
 

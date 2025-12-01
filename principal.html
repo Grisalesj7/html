@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+    <title>Página Principal</title>
+
+    <link rel="icon" type="image/x-icon" href="./img/Robot.jpeg">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        h1 {
+            color: #004aad;
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 1.5px;
+            animation: aparecer 1.5s ease;
+        }
+
+        nav {
+            margin-top: 10px;                                           
+        }
+
+        nav a {
+            color: #004aad;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        main {
+            width: 85%;
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #004aad;
+            border-left: 5px solid #007bff;
+            padding-left: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.7em;
+            color: #444;
+            text-align: justify;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #005fcc;
+        }
+
+        footer {
+            background-color: #004aad;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @keyframes aparecer {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./certificaciones.html">Certificaciones</a>
+            <a href="./ayuda.html">Ayuda</a>
+            <a href="./portafolio.html">Portafolio</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>
+                Nuestra página principal ha sido diseñada con el propósito de ofrecerte una experiencia moderna, 
+                limpia y visualmente atractiva. Aquí podrás conocer más acerca de lo que hacemos, descubrir nuestros 
+                servicios y contactarnos fácilmente. Creemos que una buena presentación digital es la clave para conectar 
+                con las personas y ofrecer información clara y ordenada.
+            </p>
+            <p>
+                A lo largo de esta web encontrarás ejemplos de diseño, contenido informativo y herramientas que puedes 
+                implementar en tus propios proyectos. Nos enfocamos en la simplicidad, la armonía visual y la funcionalidad 
+                para que cada usuario disfrute navegando en nuestro sitio.
+            </p>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Somos un equipo apasionado por la tecnología, el diseño web y la innovación. Nuestra misión es ayudar a 
+                personas y empresas a construir su presencia digital con estilo y eficacia. Creemos que cada página web 
+                debe contar una historia y reflejar la identidad de quien está detrás de ella.
+            </p>
+            <p>
+                Estoy con toda la disposicion para aprender mas sobre desarrollo web y llevar a un nivel mas alto mi conocimiento
+            </p>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Ofrecemos una variedad de servicios digitales diseñados para ayudarte a destacar en línea:</p>
+            <ul>
+                <li><strong>Diseño Web Personalizado:</strong> Creamos páginas únicas y adaptadas a tus necesidades.</li>
+                <li><strong>Diseño Gráfico:</strong> Creamos logotipos, banners, folletos y material visual atractivo.</li>
+                <li><strong>Gestión de Contenido:</strong> Mantenemos tu página siempre actualizada con textos y noticias.</li>
+                <li><strong>Asesoría Tecnológica:</strong> Te orientamos para mejorar la seguridad y el rendimiento de tu sitio.</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>
+                Si deseas comunicarte con nosotros, estaremos encantados de responderte. Puedes escribirnos para solicitar 
+                información, hacer preguntas o simplemente saludarnos. ¡Tu opinión es muy importante para nosotros!
+            </p>
+            <p>
+                Correo: <a href="https://mail.google.com/mail?hl=es">grisalesjohao@gmail.com</a><br>
+                Teléfono: +57 324 672 7621<br>
+                Dirección: Calle, medellin
+            </p>
+            <button onclick="alert('¡Mensaje enviado con éxito! ')">Enviar mensaje</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Creado por [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
